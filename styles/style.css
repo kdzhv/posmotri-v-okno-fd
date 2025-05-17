@@ -49,3 +49,255 @@ ol {
 .custom-scrollbar::-webkit-scrollbar-thumb {
   background-color: #D9D9D9;
 }
+
+.page {
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* Left = 2 parts, Right = 1 part */
+  grid-template-rows: auto;
+  gap: 30px;
+  align-items: center;
+  max-height: 534px;
+}
+
+
+.search-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.content__list-container {
+  max-height: 300px;
+  overflow: scroll;
+}
+
+.content__video-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.content__video-card-description-container {
+  max-width: 50%;
+}
+
+.content__video-card-thumbnail {
+  max-width: 50%;
+}
+
+.content__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.result__video {
+  width: 100%;
+}
+
+.search-form__fieldset {
+  border: none;
+}
+
+.search-form__fieldset-title {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+}
+
+.title {
+  margin-bottom: 24px;
+  font-size: 73px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 75px;
+  line-height: 94%;
+  text-transform: uppercase;
+}
+
+.content__accent {
+  color: #545050;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.content__video-card-title {
+  margin-bottom: 4px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #fff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.content__video-card-description {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  color: #fff;
+}
+
+.content__card-link {
+  display: block;
+  text-decoration: none;
+  padding: 2px;
+}
+
+.content__card-link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.content__card-link:focus {
+  border: none;
+}
+
+.content__card-link:focus-visible {
+  outline: 1px solid #fff;
+}
+
+.content__card-link_current {
+  background-color: #545050;
+}
+
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.search-form__fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.search-form__label {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+}
+
+.search-form__label-text {
+  padding-left: 5px;
+}
+
+fieldset {
+  border: none;
+}
+
+input[type=text]:focus {
+  outline: none;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+
+input[type=text]:focus-visible {
+  outline: 1px solid #fff;
+}
+
+
+input[type=text] {
+  color: #fff;
+  width: 225px;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 18px;
+  background-color: transparent;
+  border: none;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  appearance: none;
+}
+
+.search-form__checkbox-list {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.search-form__pseudo-checkbox {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #fff;
+}
+
+.search-form__pseudo-checkbox::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  opacity: 0;
+}
+
+input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
+  opacity: 1;
+}
+
+.search-form__label:hover .search-form__label-text {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.button {
+  cursor: pointer;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: transparent;
+  height: 34px;
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+.button:focus {
+  outline: 1px solid #fff;
+}
+
+.button:active {
+  background-color: #545050;
+  text-decoration: none;
+}
+
+.search-form__submit-button {
+  width: 194px;
+}
+
+.more-button {
+  margin-top: 30px;
+  width: 100%;
+}
+
+.result__video-container {
+  position: relative;
+}
+
+.content__list-container {
+  position: relative;
+}
