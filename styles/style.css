@@ -11,7 +11,7 @@ html {
 .page {
   display: flex;
   align-items: center;
-  inline-size: 1200px;
+  justify-content: center;
   block-size: 100%;
   margin: auto;
   color: #fff;
