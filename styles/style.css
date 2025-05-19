@@ -54,7 +54,7 @@ ol {
 
 .content {
   display: grid;
-  grid-template-columns: 710px 400px;
+  grid-template-columns: 711px 400px;
   grid-template-rows: auto;
   gap: 30px;
   align-items: center;
@@ -76,7 +76,6 @@ ol {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  max-height: 100px;
 }
 
 .content__video-card-description-container {
@@ -86,6 +85,7 @@ ol {
 .content__video-card-thumbnail {
   object-fit: cover;
   object-position: center;
+  height: 100px;
   max-width: 50%;
 }
 
@@ -98,6 +98,7 @@ ol {
 .result__video {
   object-fit: cover;
   width: 100%;
+  height: 100%;
 }
 
 .search-form__fieldset {
@@ -170,6 +171,7 @@ ol {
 
 .content__card-link:active {
   text-decoration: none;
+  background-color: #545050;
 }
 
 .content__card-link:focus {
@@ -304,8 +306,6 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
 
 .result__video-container {
   position: relative;
-}
-
-.result__video {
   height: 386px;
 }
+
